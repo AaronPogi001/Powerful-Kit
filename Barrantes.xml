@@ -1,0 +1,20 @@
+import org.w3c.dom.*;
+import javax.xml.parsers.*;
+import java.io.*;
+import org.xml.sax.SAXException;
+public class Alcantara_Lab2 {
+    public static void main(String[] args) {
+        String file = "D:\\JAvas//recipes.xml";
+        try {
+            BufferedReader fileReader = new BufferedReader(new InputStreamReader(System.in));
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            Document doc = factory.newDocumentBuilder().parse(file);
+            System.out.print("Enter element name: ");
+            String element = fileReader.readLine();
+            NodeList nodes = doc.getElementsByTagName(element);
+            System.out.println("Total no of Child/s: " + nodes.getLength());
+        } catch (IOException | ParserConfigurationException | SAXException e) {
+            System.out.println(e);
+        }
+    }
+}
