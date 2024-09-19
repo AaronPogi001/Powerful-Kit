@@ -227,7 +227,7 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
+  padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -237,8 +237,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 50px;
-  margin-right: 50px;
+  max-height: 80px;
+  margin-right: 5px;
 }
 
 .header .logo h1 {
@@ -251,7 +251,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #1e4356;
+  --background-color: #046c3c;
 }
 
 /*--------------------------------------------------------------
@@ -279,7 +279,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 16px;
+    font-size: 19px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
@@ -304,7 +304,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #fab366;
   }
 
   .navmenu .dropdown ul {
@@ -915,7 +915,7 @@ section,
 .hero p {
   width: 80%;
   margin: 0 auto 30px auto;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--default-color), transparent 5%);
   animation: fadeInDown 1s both 0.2s;
 }
 
@@ -945,11 +945,11 @@ section,
   margin: 10px;
   color: var(--default-color);
   animation: fadeInUp 1s both 0.4s;
-  border: 2px solid var(--accent-color);
+  border: 2px solid #fab366;
 }
 
 .hero .btn-get-started:hover {
-  background: var(--accent-color);
+  background: #046c3c;
   color: var(--contrast-color);
   text-decoration: none;
 }
