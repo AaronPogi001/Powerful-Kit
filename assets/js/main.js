@@ -22,6 +22,23 @@
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
+let lastScrollTop = 0;
+const navbar = document.querySelector('#header');
+
+window.addEventListener('scroll', function () {
+let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+if (scrollTop > lastScrollTop) {
+  // Scrolling down, hide the navbar
+  navbar.style.top = "-127px";  // Adjust this value based on navbar height
+} else {
+  // Scrolling up, show the navbar
+  navbar.style.top = "0";
+}
+
+lastScrollTop = scrollTop;
+});
+
   /**
    * Mobile nav toggle
    */
