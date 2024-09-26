@@ -16,6 +16,8 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +27,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.css">
+
   
 </head>
 
@@ -42,12 +46,12 @@
       <nav id="navmenu" class="navmenu">
         <ul>
             <li class="nav-item dropdown mx-2">
-                <a class="nav-link dropdown toggle" href="index.html" role="button" data-bs-hover="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown toggle customfont" href="index.html" role="button" data-bs-hover="dropdown" aria-expanded="false">
                     About Us
                 </a>
                 <ul id="Home" class="dropdown-menu">
                     <li><a class="dropdown-item" href="index.html">Who we are</a></li>
-                    <li><a class="dropdown-item" href="team.html">Team</a></li>
+                    <li><a class="dropdown-item" href="index.html">Team</a></li>
                 </ul>
             </li>
         <ul>
@@ -87,77 +91,43 @@
     <!-- /Featured Services Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" data-aos="zoom-in" data-aos-delay="200">
-            <div class="container-fluid">
-              <div class="row no-gutters">
-                <a href="assets/img/services-1.jpg" data-lightbox="Caption1" data-title="Caption2"><img src="assets/img/services-1.jpg" class="art img-fluid" alt=""></a>
-              </div>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" data-aos="zoom-in" data-aos-delay="200">
-            <div class="container-fluid">
-              <div class="row no-gutter">
-                <a href="assets/img/services-2.jpg"><img src="assets/img/services-2.jpg" class="art img-fluid" alt=""></a>
-              </div>
-              
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" data-aos="zoom-in" data-aos-delay="200">
-            <div class="container-fluid">
-              <div class="row no-gutter">
-                <a href="assets/img/services-3.jpg"><img src="assets/img/services-3.jpg" class="art img-fluid" alt=""></a>
-              </div>
-              
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" data-aos="zoom-in" data-aos-delay="200">
-            <div class="container-fluid">
-              <div class="row no-gutter">
-                <a href="assets/img/services-4.jpg"><img src="assets/img/services-4.jpg" class="art img-fluid" alt=""></a>
-              
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" data-aos="zoom-in" data-aos-delay="200">
-            <div class="container-fluid">
-              <div class="row no-gutter">
-                <a href="assets/img/services-4.jpg"><img src="assets/img/services-4.jpg" class="art img-fluid" alt=""></a>
-              
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" data-aos="zoom-in" data-aos-delay="200">
-            <div class="container-fluid">
-              <div class="row no-gutter">
-                <a href="assets/img/services-4.jpg"><img src="assets/img/services-4.jpg" class="art img-fluid" alt=""></a>
-              
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" data-aos="zoom-in" data-aos-delay="200">
-            <div class="container-fluid">
-              <div class="row no-gutter">
-                <a href="assets/img/services-4.jpg"><img src="assets/img/services-4.jpg" class="art img-fluid" alt=""></a>
-              
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-
+    
+      <div class="container">
+        <div class="gallery px-5">
+          <a href="assets/img-samp/Square-1.jpg" class="glightbox" data-gallery="gallery1" data-glightbox="zoomable: false; title: BIG - J DANCE WORKSHOP; description: .custom-desc1">        
+            <img src="assets/img-samp/BigJ A4.jpg">
+          </a>
+          <div class="glightbox-desc custom-desc1">
+            <h5>SATURDAY - 1PM</h5>
+            <h5>GSWC Pasig Ground Floor</h5>
+          </div>
+          <a href="assets/img-samp/Drama A4.jpg" class="glightbox" data-gallery="gallery1" data-zoomable="false" data-title="Aaron Barrantes">
+            <img src="assets/img-samp/Drama A4.jpg">
+          </a>
+          <a href="assets/img-samp/HH Boys A4.jpg" class="glightbox" data-gallery="gallery1" data-zoomable="false" data-title="Aaron Barrantes">
+            <img src="assets/img-samp/HH Boys A4.jpg">
+          </a>
+          <a href="assets/img-samp/HH Kids A4.jpg" class="glightbox" data-gallery="gallery1" data-zoomable="false" data-title="Aaron Barrantes">
+            <img src="assets/img-samp/HH Kids A4.jpg">
+          </a>
+          <a href="assets/img-samp/HH Women A4.jpg" class="glightbox" data-gallery="gallery1" data-zoomable="false" data-title="Aaron Barrantes">
+            <img src="assets/img-samp/HH Women A4.jpg">
+          </a>
+          <a href="assets/img-samp/Hoop Heaven Adult A4.jpg" class="glightbox" data-gallery="gallery1" data-zoomable="false" data-title="Aaron Barrantes">
+            <img src="assets/img-samp/Hoop Heaven Adult A4.jpg">
+          </a>
+          <a href="assets/img-samp/Prod A4.jpg" class="glightbox" data-gallery="gallery1" data-zoomable="false" data-title="Aaron Barrantes">
+            <img src="assets/img-samp/Prod A4.jpg">
+          </a>
+          <a href="assets/img-samp/Shuttlers A4.jpg" class="glightbox" data-gallery="gallery1" data-zoomable="false" data-title="Aaron Barrantes">
+            <img src="assets/img-samp/Shuttlers A4.jpg">
+          </a>
+          <a href="assets/img-samp/TG A4.jpg" class="glightbox" data-gallery="gallery1" data-zoomable="false" data-title="Aaron Barrantes">
+            <img src="assets/img-samp/TG A4.jpg">
+          </a>
         </div>
       </div>
-    </section><!-- /Services Section -->
-
+       <!-- /Services Section -->
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -244,8 +214,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/main.js" src="assets/vendor/glightbox/js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
