@@ -214,3 +214,23 @@ lastScrollTop = scrollTop;
   });
 
 })();
+
+document.querySelectorAll('.readMoreBtn').forEach(button => {
+  button.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    const memberInfo = this.closest('.member-info');
+    const fullDescription = memberInfo.querySelector('.fullDescription');
+    const shortDescription = memberInfo.querySelector('.shortDescription');
+
+    if (fullDescription.style.display === 'none') {
+      fullDescription.style.display = 'block'; // Show full description
+      shortDescription.style.display = 'none'; // Hide short description
+      this.textContent = 'Read Less'; // Change button text
+    } else {
+      fullDescription.style.display = 'none'; // Hide full description
+      shortDescription.style.display = 'block'; // Show short description
+      this.textContent = 'Read More'; // Change button text
+    }
+  });
+});
