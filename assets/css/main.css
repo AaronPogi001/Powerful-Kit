@@ -341,14 +341,14 @@ h6 {
 
   .navmenu .dropdown .dropdown ul {
     top: 0;
-    right: -90%;
+    right: -95%;
     visibility: hidden;
   }
 
   .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
-    : -100%;
+    right:-95%;
     visibility: visible;
   }
 }
@@ -2668,4 +2668,7 @@ section,
   font-style: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
 
+}
+.menu li {
+position: relative;
 }
