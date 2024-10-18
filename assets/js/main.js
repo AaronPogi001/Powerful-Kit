@@ -234,3 +234,4 @@ document.querySelectorAll('.readMoreBtn').forEach(button => {
     }
   });
 });
+
