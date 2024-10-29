@@ -224,14 +224,15 @@ document.querySelectorAll('.readMoreBtn').forEach(button => {
     const shortDescription = memberInfo.querySelector('.shortDescription');
 
     if (fullDescription.style.display === 'none') {
-      fullDescription.style.display = 'block'; // Show full description
-      shortDescription.style.display = 'none'; // Hide short description
-      this.textContent = 'Read Less'; // Change button text
+      fullDescription.style.display = 'block'; 
+      shortDescription.style.display = 'none'; 
     } else {
-      fullDescription.style.display = 'none'; // Hide full description
-      shortDescription.style.display = 'block'; // Show short description
-      this.textContent = 'Read More'; // Change button text
+      fullDescription.style.display = 'none'; 
+      shortDescription.style.display = 'block'; 
     }
   });
 });
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
