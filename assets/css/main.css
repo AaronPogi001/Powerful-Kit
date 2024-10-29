@@ -1891,7 +1891,7 @@ section, .section {
 }
 
 .team .team-member .member-info p {
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 400;
 }
 
@@ -1932,6 +1932,34 @@ section, .section {
   }
 }
 
+.tooltip-trigger {
+  position: relative;
+  cursor: pointer;
+  color: blue;
+}
+
+#tooltip-box {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+  max-width: 200px;
+  z-index: 100;
+  box-shadow: 2px 2px 10px rgba(255, 212, 212, 0.3);
+}
+
+#tooltip-box::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  top: -10px;  
+  left: 20px;
+}
 
 /*--------------------------------------------------------------
 # Blog Posts Section
@@ -2634,4 +2662,3 @@ section, .section {
 .menu li {
 position: relative;
 }
-
