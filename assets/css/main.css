@@ -354,9 +354,6 @@ h6 {
 }
 
 
-
-
-
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -718,7 +715,7 @@ h6 {
 section, .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 100px 50px;
+  padding: 100px 95px;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -809,14 +806,14 @@ section, .section {
 
 .carousel-text h2{
   margin-top: 12%;
-  font-size: 73px;
+  font-size: 50px;
   font-weight: 700; 
   color: rgb(255, 255, 255);
   animation: fadeInDown 1s both;
 }
 
 .carousel-text p{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700; 
   color: rgb(250, 249, 249);
   animation: fadeInDown 1s both 0.2s; 
@@ -1880,12 +1877,12 @@ section, .section {
 .team .team-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .team .team-member .member-info span {
   display: block;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
@@ -1910,11 +1907,11 @@ section, .section {
 }
 
 .team .carousel-control-next {
-  right: -35px;
+  right: -40px;
 }
 
 .team .carousel-control-prev {
-  left: -35px;
+  left: -60px;
 }
 
 .team .carousel-control-next-icon,
@@ -1930,12 +1927,6 @@ section, .section {
   .card img {
     height: 11em;
   }
-}
-
-.tooltip-trigger {
-  position: relative;
-  cursor: pointer;
-  color: blue;
 }
 
 #tooltip-box {
